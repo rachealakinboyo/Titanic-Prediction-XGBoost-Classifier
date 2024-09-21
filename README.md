@@ -1,2 +1,9 @@
 # Titanic-Prediction-XGBoost-Classifier
-This project leverages the XGBoost algorithm to predict Titanic passenger survival. It includes thorough data exploration, preprocessing, and model training with hyperparameter tuning. The model is evaluated using metrics like accuracy, precision, recall, and ROC-AUC, with feature importance analysis to highlight key predictors of survival.
+
+This project uses the XGBoost machine learning algorithm to predict the survival of Titanic passengers. The dataset, sourced from the [Kaggle Titanic competition](https://www.kaggle.com/c/titanic/data), includes features such as PassengerID, Pclass, Sex, Age, SibSp (number of siblings or spouses aboard), Parch (number of parents or children aboard), Ticket, Fare, Cabin, and Embarked (port of embarkation). The goal of this project is to build a predictive model that can determine whether a passenger survived based on these features.
+
+The project follows a standard machine learning workflow. It begins with data exploration and cleaning, which includes handling missing values, encoding categorical variables, and feature scaling. Feature engineering was applied to create new features like FamilySize, combining SibSp and Parch. The cleaned and engineered data was then used to train the model.
+
+The XGBoost algorithm was chosen for its efficiency and performance with structured/tabular data. Hyperparameter tuning was conducted using GridSearchCV to optimize parameters such as learning rate, max depth, and number of estimators. The model was evaluated using common classification metrics like accuracy, precision, recall, and ROC-AUC. Additionally, feature importance analysis was performed to identify the most significant predictors of survival, with Pclass, Sex, and Age being the top factors.
+
+The final model achieved a public score of 0.78 on Kaggle. This project demonstrates the power of XGBoost for binary classification tasks and highlights the importance of thorough data preprocessing and hyperparameter tuning for model performance optimization. The project is licensed under the MIT License, making it open for use and modification by others.
